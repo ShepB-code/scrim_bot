@@ -1,0 +1,1 @@
+worker: python scrim_bot_main.py

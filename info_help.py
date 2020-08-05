@@ -31,8 +31,7 @@ class Info_Help(commands.Cog):
         )
         help_embed.add_field(name='Scrim Command', value=f'Called by typing {bot_prefix}scrim into a discord channel\n-\nSets up a custom scrim!', inline=True)
         help_embed.add_field(name='Result Command', value=f'Called by typing {bot_prefix}result into a discord channel\n-\nSends a results embed to a specific channel!', inline=True)
-
-
+        
         help_embed.add_field(name='Want a Bot?', value='[Click Here](https://discord.gg/tEzJRfw)', inline=False)
         help_embed.set_thumbnail(url=self.bot.user.avatar_url)
         

@@ -14,7 +14,7 @@ class Scrim(commands.Cog):
         self.bot = bot
     
     @commands.command()
-    async def Scrim(self, ctx, *args):
+    async def scrim(self, ctx, *args):
     
         channel = ctx.channel
         message = ctx.message
