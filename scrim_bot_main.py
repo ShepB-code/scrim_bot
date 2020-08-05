@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix='?')
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game('Testing Commands'))
+    await bot.change_presence(activity=discord.Game('?info for commands'))
     print(f'Logged in as: {bot.user.name}')
     print(f'With ID: {bot.user.id}')
 
@@ -30,5 +30,4 @@ bot.add_cog(results.Results(bot))
 bot.add_cog(info_help.Info_Help(bot))
 
 with open('scrim_bot_token.txt', 'r') as f:
-    #print(f.read().strip())
     bot.run(f.read().strip())
